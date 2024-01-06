@@ -1,0 +1,11 @@
+# docker-compose.yml
+
+version: '3'
+
+services:
+  spring-boot-app:
+    image: your-spring-boot-app:latest
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./sample-data.csv:/app/sample-data.csv
